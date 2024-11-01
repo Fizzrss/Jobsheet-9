@@ -9,7 +9,7 @@ public class SearchNilai09modif {
 
         int[] arrNilai = new int[jmlMahasiswa];
         int key = 0;
-        int hasil = 0;
+        int hasil = -1;
 
         for (int i = 0; i < arrNilai.length; i++) {
             System.out.print("Masukkan nilai mahasiswa ke- "+(i+1)+": ");
@@ -21,12 +21,19 @@ public class SearchNilai09modif {
         for (int i = 0; i < arrNilai.length; i++) {
             if (key == arrNilai[i]) {
                 hasil = i+1;
-                break;
-            }
+                System.out.println();
+                System.out.println("Nilai "+key+" ketemu di indeks ke- "+hasil);
+                System.out.println();
+                break;  
+            }  
         }
-        System.out.println();
-        System.out.println("Nilai "+key+" ketemu di indeks ke- "+hasil);
-        System.out.println();
+        if (hasil == -1) {
+            System.out.println();
+            System.out.println("Nilai yang dicari tidak ditemukan");
+            System.out.println();
+        } 
+        
+        
         
     }
 }
