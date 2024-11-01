@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class ArrayNilai09modif {
     public static void main(String[] args) {
+        
         int[] nilaiAkhir = new int[10];
             Scanner sc = new Scanner(System.in);
     
